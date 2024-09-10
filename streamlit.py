@@ -535,8 +535,8 @@ if page == pages[4] :
 
 
     # # Statistiques par cluster A 
-    # st.write ("Moyennes par clusters avec " + str( n_clusters)  + " clusters" )
-    # st.write(datas_class.groupby('cluster').agg(['mean', 'count']))# il faut arranger ça
+    st.write ("Moyennes par clusters avec " + str( n_clusters)  + " clusters" )
+    st.write(datas_class[ 'POP_Total','Cluster'] .groupby('Cluster').agg(['mean', 'count']))# il faut arranger ça
     
     
     gdf = pd.merge(carto, datas_class, left_on='INSEE_COM', right_on='INSEE_COM', how='left')
