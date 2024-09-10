@@ -480,6 +480,7 @@ if page == pages[4] :
     st.write(df_num.head())
 
     # Paramètres pour la clusterisation
+    st.write( "Notre conseil est de limiter le nombre de clusters entre 3 et 5 pour des regroupement pertinents, et de se limiter à la méthode ward plus efficace en l'espèce.")
     n_clusters = st.slider("Nombre de clusters", min_value=2, max_value=10, value=5)
     method_linkage = st.selectbox("Méthode de liaison", ["ward", "complete", "average", "single"])
     
