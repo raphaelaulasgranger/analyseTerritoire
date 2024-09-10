@@ -11,4 +11,4 @@ colormap
 streamlit_folium 
 scikit-learn 
 scipy
-
+plotly
