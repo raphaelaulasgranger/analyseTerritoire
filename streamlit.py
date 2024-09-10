@@ -33,12 +33,12 @@ from sklearn.cluster import AgglomerativeClustering
 
 #préparation datas 0
 # @st.cache_data
-path = '/home/raphael.aulas/Documents/TECHNIQUE/python/projets_entrainement/essaiEuropéeennes/'
+path = './'
 name = '2024_52.csv'
 
 datas = pd.read_csv(path + name , index_col= 0)
 
-path = '/home/raphael.aulas/Documents/TECHNIQUE/python/projets_entrainement/essaiEuropéeennes/projet/'
+path = './'
 name = '52.geojson'
 carto = gpd.read_file(path + name)
 carto.INSEE_COM = carto.INSEE_COM.astype('int')
