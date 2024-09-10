@@ -21,12 +21,13 @@ from matplotlib import colors
 import matplotlib.colors as mcolors
 from streamlit_folium import st_folium
 from pandas.plotting import scatter_matrix
-from scikit-learn.decomposition import PCA
-from  scikit-learn.preprocessing import scale
-from scikit-learn.preprocessing import StandardScaler
+from sklearn.decomposition import _pca as PCA
+# import scikit 
+from sklearn.preprocessing import scale
+from sklearn.preprocessing import StandardScaler
 from scipy.cluster.hierarchy import linkage as scipy_linkage
 from scipy.cluster.hierarchy import dendrogram as scipy_dendrogram
-from scikit-learn.cluster import AgglomerativeClustering
+from sklearn.cluster import AgglomerativeClustering
 # import plotly.figure_factory as ff
 
 
@@ -77,7 +78,7 @@ if page == pages[0] :
     st.write("### Introduction")
     with st.container():
         st.write("Ce document esquisse ce que peut être une analyse territoriale basée sur la géomatique et l'analyse statistique. Le territoire analysé est le département de la Haute Saône, coeur de la ruralité heureuse, et épicentre du séisme politique de l'année 2024.")
-        sr.write ( "La série de données intégre  :  les résultats électoraux des européennes et du premier tour des législatives  de 2024, les données INSEE représentant le niveau de diplôme et de chomage par tranches d'age de la population des villes qui composent ce département.")
+        st.write ( "La série de données intégre  :  les résultats électoraux des européennes et du premier tour des législatives  de 2024, les données INSEE représentant le niveau de diplôme et de chomage par tranches d'age de la population des villes qui composent ce département.")
         
         st.write( "Vous pouvez trouver une analyse des données, une représentation des données, une représentation des résultats electoraux, et enfin une anlyse des corrélations se terminant par une clusterisation des villes.")
 
