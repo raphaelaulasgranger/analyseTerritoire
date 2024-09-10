@@ -1,22 +1,14 @@
 streamlit
 pandas
 numpy 
-matplotlib.pyplot 
+matplotlib 
 seaborn 
 geopandas 
 folium
-
 colormaps
 branca.colormap 
 colormap 
-matplotlib
-matplotlib.colors 
 streamlit_folium 
-pandas.plotting 
-sklearn.decomposition 
-sklearn.preprocessing
-sklearn.preprocessing 
-scipy.cluster.hierarchy
-scipy.cluster.hierarchy
-sklearn.cluster
+sklearn 
+scipy
 
