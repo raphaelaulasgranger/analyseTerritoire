@@ -507,7 +507,7 @@ if page == pages[4] :
     linkage_matrix = scipy_linkage(df_scaled, method = method_linkage )
         
     # Tracer le dendrogramme
-    plt.figure(figsize=(15, 25))
+    plt.figure(figsize=(15, 15))
     
 
     # Trouvez la hauteur de coupure correspondant au nombre de clusters souhaité
