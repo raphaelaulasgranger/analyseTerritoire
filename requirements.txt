@@ -9,6 +9,6 @@ colormaps
 branca 
 colormap 
 streamlit_folium 
-sklearn 
+scikit-learn 
 scipy
 

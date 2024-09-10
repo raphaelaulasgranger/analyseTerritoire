@@ -21,12 +21,12 @@ from matplotlib import colors
 import matplotlib.colors as mcolors
 from streamlit_folium import st_folium
 from pandas.plotting import scatter_matrix
-from sklearn.decomposition import PCA
-from sklearn.preprocessing import scale
-from sklearn.preprocessing import StandardScaler
+from scikit-learn.decomposition import PCA
+from  scikit-learn.preprocessing import scale
+from scikit-learn.preprocessing import StandardScaler
 from scipy.cluster.hierarchy import linkage as scipy_linkage
 from scipy.cluster.hierarchy import dendrogram as scipy_dendrogram
-from sklearn.cluster import AgglomerativeClustering
+from scikit-learn.cluster import AgglomerativeClustering
 # import plotly.figure_factory as ff
 
 
