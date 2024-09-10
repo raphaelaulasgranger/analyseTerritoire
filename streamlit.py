@@ -537,11 +537,11 @@ if page == pages[4] :
  
     
     # # Statistiques par cluster A 
-    st.write ("Décompte par clusters avec " + str( n_clusters)  + " clusters" )
-    st.write(datas_class[ ['INSEE_COM' ,'Cluster']] .groupby('Cluster').agg(['count']))# il faut arranger ça
-    col_stat = ['POP_Total',  'L24T1_ENS',  'L24T1_LR',   'L24T1_RN',   'L24T1_UG',  'L24T1_Abstentions', 'DIP_BAC_+_2', 'DIP_BAC_+_3_ou_4', 'DIP_BAC_+_5', 'DIP_BAC,_brevet_pro_ou_équiv', 'DIP_Brevet_des_collèges', 'DIP_CAP-BEP_ou_équiv', 'DIP_Sans_diplôme_ou_CEP', 'CHO_Chôm_15-24_ans', 'CHO_Chôm_25-54_ans', 'CHO_Chôm_55-64_ans', 'Cluster' ]
-    st.write ("Moyennes par clusters avec " + str( n_clusters)  + " clusters" )
-    st.write(datas[ col_stat ].groupby('Cluster').agg(['mean']))
+    # st.write ("Décompte par clusters avec " + str( n_clusters)  + " clusters" )
+    # st.write(datas_class[ ['INSEE_COM' ,'Cluster']] .groupby('Cluster').agg(['count']))# il faut arranger ça
+    # col_stat = ['POP_Total',  'L24T1_ENS',  'L24T1_LR',   'L24T1_RN',   'L24T1_UG',  'L24T1_Abstentions', 'DIP_BAC_+_2', 'DIP_BAC_+_3_ou_4', 'DIP_BAC_+_5', 'DIP_BAC,_brevet_pro_ou_équiv', 'DIP_Brevet_des_collèges', 'DIP_CAP-BEP_ou_équiv', 'DIP_Sans_diplôme_ou_CEP', 'CHO_Chôm_15-24_ans', 'CHO_Chôm_25-54_ans', 'CHO_Chôm_55-64_ans', 'Cluster' ]
+    # st.write ("Moyennes par clusters avec " + str( n_clusters)  + " clusters" )
+    # st.write(datas[ col_stat ].groupby('Cluster').agg(['mean']))
     
     # carto 
     st.header("Cartographie des clusters")
