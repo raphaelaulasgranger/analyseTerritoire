@@ -327,7 +327,7 @@ if page == pages[2] :
     st.dataframe(gdf[viz_ratio].describe())
     
     #   Folium dasn  Streamlit
-    st_data = st_folium(m, width=1000)
+    st_data = st_folium(m, width=705)
 
 
 if page == pages[3] : 
