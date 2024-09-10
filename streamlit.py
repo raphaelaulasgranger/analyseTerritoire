@@ -21,7 +21,7 @@ from matplotlib import colors
 import matplotlib.colors as mcolors
 from streamlit_folium import st_folium
 from pandas.plotting import scatter_matrix
-from sklearn.decomposition import _pca as PCA
+from sklearn.decomposition import PCA
 # import scikit 
 from sklearn.preprocessing import scale
 from sklearn.preprocessing import StandardScaler
@@ -77,8 +77,8 @@ page=st.sidebar.radio("Aller vers", pages)
 if page == pages[0] : 
     st.write("### Introduction")
     with st.container():
-        st.write("Ce document esquisse ce que peut être une analyse territoriale basée sur la géomatique et l'analyse statistique. Le territoire analysé est le département de la Haute Saône, coeur de la ruralité heureuse, et épicentre du séisme politique de l'année 2024.")
-        st.write ( "La série de données intégre  :  les résultats électoraux des européennes et du premier tour des législatives  de 2024, les données INSEE représentant le niveau de diplôme et de chomage par tranches d'age de la population des villes qui composent ce département.")
+        st.write("Ce document est une esquisse d'analyse territoriale basée sur la géomatique et l'analyse statistique. Le territoire analysé est le département de la Haute-Saône, coeur de la ruralité heureuse et épicentre du séisme politique de l'année 2024 qui a vu les partis d'extrème-droite atteindre des scores inégalés depuis un siècle.")
+        st.write ( "La série de données intégre : les résultats électoraux des européennes et du premier tour des législatives  de 2024, les données INSEE représentant le niveau de diplôme et de chomage par tranches d'age de la population des villes qui composent ce département.")
         
         st.write( "Vous pouvez trouver une analyse des données, une représentation des données, une représentation des résultats electoraux, et enfin une anlyse des corrélations se terminant par une clusterisation des villes.")
 
@@ -375,8 +375,8 @@ if page == pages[3] :
     fig = px.imshow(corr, text_auto='.2f', aspect="auto")
     st.plotly_chart(fig, theme=None)    
     st.write( "liste des colonnes : " , gdf_corr.columns.tolist())
-    st.write("Le tableau des corrélations, réduits à quelques variables dans un effort de faclité de lecture, donne des premiers résultats interessants : correlation négative de la participation et des 3 llsites retenues, montrant la mobilisatin des camps, décorrélation du vote RN et des diplomés à BAc+2 Bac+3, corrélation entre le vote RN est les diplomés CAP/BEP  ")
-    st.write ("on prendra évidemment ces corrélations avec la plus grande prudence : la granulométrie communale invite à prendre les résultats avec humilité, la répartition des populations au sein d'une meme commune peut être très disparate.")
+    st.write("Le tableau des corrélations analyse un set de données réduit à quelques variables dans un effort de facilité la lecture. Il donne néanmoins des premiers résultats intéressants : corrélation négative de la participation et des 3 listes retenues, montrant la mobilisatin de chacun des camps, décorrélation du vote RN et des diplomés à BAc+2 Bac+3, corrélation entre le vote RN et les diplomés CAP/BEP  ")
+    st.write ("On prendra évidemment ces corrélations avec la plus grande prudence : 1/ il s'agit de phénomènes sociaux 2/ la granulométrie communale invite à considérer ces résultats avec humilité, la répartition des populations au sein d'une meme commune pouvant être très disparate.")
    
     # # Generate a mask for the upper triangle
     # mask = np.triu(np.ones_like(corr, dtype=bool))
@@ -577,10 +577,12 @@ if page == pages[4] :
 
 if page == pages[5] : 
     st.write("### conclusions")
-    st.write( "Cette présentation est une preuve de concept. elle n'a pas pour objectif d'être opérationnelle en l'état. Pour ce faire, il faudrait étendre les données en entrée, repérer les variables les plus pertinentes lors des corrélations. Ces corrélations, pour être réalistes, doivent mieux coller à la réalité électorale, c'est à dire à l'échelon le plus petit qu'est le bureau de vote.")
+    st.write( "Cette présentation est une preuve de concept. Elle n'a pas pour objectif d'être opérationnelle en l'état. Pour ce faire, il faudrait étendre les données en entrée, repérer les variables les plus pertinentes lors des corrélations. Ces corrélations, pour être réalistes, doivent mieux coller à la réalité électorale, c'est à dire à l'échelon le plus petit qu'est le bureau de vote.")
     st.write("Dans sa grande sagesse, l'INSEE a construit la statistique publique sur des périmètres différents de ceux des bureaux de vote, interdisant ainsi les méthodes trop simples de recoupement.")
-    st.write("Pour autant, les trvaux présentés ici esquissent une méthode fiable et puissante tant pour comprendre un territoire et construire des indicateurs solides pour l'évolution des territoire.")
-
+    st.write("Pour autant, les travaux présentés ici esquissent une méthode fiable et puissante tant pour comprendre un territoire et construire des indicateurs solides pour l'évolution des territoire. Il esquisse un travail utile :")
+    st.write( "1/ Pour les exécutifs des collectivités et les responsables politiques pour aborder les prochaines échéances, ")
+    st.write ( "2/ pour les administrations des collectivités qui voudraient objectiver des mécanismes complexes et trouver les clefs de compréhension pour mettre en place ou évaluer des programmes d'actions publiques,  ")
+    st.write( "3/ pour les aménageurs ou acteurs de projets publics confronté aujourd'hui à des phénomènes de rejet de projets divers.")
 
     
     
