@@ -6,7 +6,7 @@ seaborn
 geopandas 
 folium
 colormaps
-branca.colormap 
+branca 
 colormap 
 streamlit_folium 
 sklearn 
