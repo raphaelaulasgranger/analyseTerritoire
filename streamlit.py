@@ -113,6 +113,7 @@ if page == pages[1] :
     ax.set_xlabel(selected_column)
     ax.set_ylabel("Fréquence")
     st.pyplot(fig)
+    st.write("Raphaël AULAS-GRANGER -  2024")
 
 if page == pages[2] : 
     st.write("### cartographie électorale")
@@ -196,7 +197,7 @@ if page == pages[2] :
         return result_list
     
     # choix Elections
-    ch_election = [ "2024Europenne","2024LEG_tour1" ]
+    ch_election = [ "2024 Européenne","2024 Législative tour 1" ]
     d_ch_election = { "2024 Européenne"  : "E24", "2024 Législative tour 1":"L24T1" }
     selected_column = st.selectbox("Choisissez une élection à analyser", ch_election )
     suff_viz = d_ch_election[selected_column]
