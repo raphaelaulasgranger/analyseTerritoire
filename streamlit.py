@@ -89,7 +89,7 @@ if page == pages[0] :
         #     st.histogram(gdf[selected_column])
             
     with st.container():
-        st.write("Ceci est le conteneur intérieur.")
+        st.write("Raphaël AULAS-GRANGER -  2024")
 if page == pages[1] : 
     st.write("### Visualisation")
     # Sélection de la colonne
@@ -329,7 +329,7 @@ if page == pages[2] :
     #   Folium dasn  Streamlit
     st_data = st_folium(m, width=705)
 
-
+    st.write("Raphaël AULAS-GRANGER -  2024")
 if page == pages[3] : 
     st.write("### corrélations")
     gdf_corr = gdf[['L24T1_Abstentions_ratio' ,'L24T1_ENS_ratio' ,'L24T1_RN_ratio' ,'L24T1_UG_ratio' , 'CHO_Chôm_15-24_ans_ratio' , 'CHO_Chôm_25-54_ans_ratio' , 'CHO_Chôm_55-64_ans_ratio']]
@@ -397,7 +397,7 @@ if page == pages[3] :
 
 
     # plt.show()
-
+    st.write("Raphaël AULAS-GRANGER -  2024")
 if page == pages[4] : 
     st.write("### classification")
     st.header("Européennes 2024 : Analyse des composantes principales")
@@ -573,7 +573,7 @@ if page == pages[4] :
     #   Folium dasn  Streamlit
     st_data = st_folium(m, width=1000)
 
-
+    st.write("Raphaël AULAS-GRANGER -  2024")
 if page == pages[5] : 
     st.write("### conclusions")
     st.write( "Cette présentation est une preuve de concept. Elle n'a pas pour objectif d'être opérationnelle en l'état. Pour ce faire, il faudrait étendre les données en entrée, repérer les variables les plus pertinentes lors des corrélations. Ces corrélations, pour être réalistes, doivent mieux coller à la réalité électorale, c'est à dire à l'échelon le plus petit qu'est le bureau de vote.")
@@ -583,5 +583,5 @@ if page == pages[5] :
     st.write ( "2/ pour les administrations des collectivités qui voudraient objectiver des mécanismes complexes et trouver les clefs de compréhension pour mettre en place ou évaluer des programmes d'actions publiques,  ")
     st.write( "3/ pour les aménageurs ou acteurs de projets publics confronté aujourd'hui à des phénomènes de rejet de projets divers.")
 
-    
+    st.write("Raphaël AULAS-GRANGER -  2024") 
     
